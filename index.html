@@ -22,10 +22,10 @@
                 <h3>Форма регистрации</h3>
                 <fieldset class="form__fieldset">
                     <div class="form__field">
-                        <input class="form__input" type="text" name="name" pattern="/([А-ЯЁ][а-яё]{1,19}-?){1,2}/gm" placeholder="Имя" required />
+                        <input class="form__input" type="text" name="name" pattern="/([А-ЯЁ][а-яё]{1,19}-?){1,2}/g" placeholder="Имя" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="name" pattern="" placeholder="E-Mail" />
+                        <input class="form__input" type="email" name="name" pattern="/[\w\-]+@[\w]+\.\w+/g" placeholder="E-Mail" />
                         <span class="form__error">e-mail в формате: sega@yandex.ru</span>
                     </div>
                     <div class="form__field">
